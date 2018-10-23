@@ -6,7 +6,7 @@ package lab1;
 Целочисленные значения вывести в десятичном и шестнадцатеричном формате. 
 **/
 
-public class App {
+public class Task1 {
 	
 	public static void nonInit() 
 	{
@@ -67,7 +67,7 @@ public class App {
 	}
 	
 	public static void main(String[]args) {
-		App.withInit();
+		Task1.withInit();
 	}
 
 }
