@@ -8,7 +8,7 @@ package lab1;
 
 public class Task1 {
 	
-	public static void nonInit() 
+	private static void nonInit() 
 	{
 		byte a1;
 		short a2;
@@ -33,14 +33,14 @@ public class Task1 {
 	//	System.out.printf("boolean = %b ", d1);
 	}
 	
-	public static void withInit()
+	private static void withInit()
 	{
 		byte a1 = 127;
 		short a2 = 512;
 		int a3 = 1024;
 		long a4 = 2048;
 	
-		char b1 = '1';
+		char b1 = '2';
 	
 		float c1 = 1.25f;
 		double c2 = 1.25;
@@ -51,6 +51,7 @@ public class Task1 {
 		System.out.printf("10 --> 16 : 512 = %s %n", Integer.toHexString(a2));
 		System.out.printf("10 --> 16 : 1024 = %s %n", Integer.toHexString(a3));
 		System.out.printf("10 --> 16 : 2048 = %s %n", Long.toHexString(a4));
+		System.out.printf("10 --> 16 : char c1(%s) = %s %n",b1, Integer.toHexString((int)b1));
 		
 		
 		System.out.println("a1 = " + a1 + " a2 = " + a2 + " a3 = " + a3 + " a4 = " + a4);
