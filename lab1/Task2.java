@@ -1,6 +1,24 @@
 package lab1;
 
+/** 
+¬ыполнить приведение целочисленных типов с допустимым расширением диапазона. 
+¬ыполнить приведение double к float, float к int с некорректным преобразованием(переполнением).
+**/
+
 public class Task2 {
+	
+	private static void castIncorrect()
+	{
+		int a = 1;
+		float b = 1.25f;
+		double c = 2147483648.1;
+		
+		float newFloat = (float)c;
+		int newInt = (int)b;
+		
+		System.out.printf("double to float : %1.1f --> %1.1f %n",c,newFloat);
+		System.out.printf("float to int : %1.1f --> %d",b,newInt);
+	}
 	
 	private static void cast() 
 	{
@@ -26,5 +44,6 @@ public class Task2 {
 	
 	public static void main(String[]args) {
 		Task2.cast();
+		Task2.castIncorrect();
 	}
 }
