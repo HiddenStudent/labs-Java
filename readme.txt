@@ -1,1 +1,1 @@
-«десь будут лабы по Java!
+There will be Java labs!
